@@ -1,0 +1,2 @@
+class Broom < ApplicationRecord
+end
