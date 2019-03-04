@@ -22,16 +22,20 @@ ActiveRecord::Schema.define(version: 2019_03_04_202202) do
 
   create_table "brooms", force: :cascade do |t|
     t.string "make"
-    t.string "origin"
-    t.string "material"
+    t.string "image_url"
+    t.string "utility"
+    t.string "creator"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "pets", force: :cascade do |t|
     t.string "name"
+    t.string "animal"
     t.string "breed"
-    t.string "color"
+    t.string "image_url"
+    t.string "former_owner"
+    t.string "gender"
     t.integer "age"
     t.integer "user_id"
     t.datetime "created_at", null: false
@@ -59,9 +63,9 @@ ActiveRecord::Schema.define(version: 2019_03_04_202202) do
     t.string "wood"
     t.string "famous_owners"
     t.string "core"
-    t.integer "length"
+    t.string "length"
     t.string "notes"
-    t.string "image"
+    t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -31,58 +31,54 @@ hp = Wand.create(wood: "Holly", famous_owners: "Harry Potter", core: "Phoenix fe
 
 hermione = Wand.create(wood: "Vine", famous_owners: "Hermione Granger", core: "Dragon heartstring", length: "10¾ inches", notes: "This wand was confiscated when the trio was captured by Snatchers in 1998.", image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/c/c6/HermioneGrangerWandNN8411.jpg/revision/latest?cb=20140602200406")
 
-lucius = Wand.create(wood: "Vine", famous_owners: "Hermione Granger", core: "Dragon heartstring", length: "10¾ inches", notes: "This wand was confiscated when the trio was captured by Snatchers in 1998.", image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/c/c6/HermioneGrangerWandNN8411.jpg/revision/latest?cb=20140602200406")
+lucius = Wand.create(wood: "Elm", famous_owners: "Lucius Malfoy", core: "Dragon heartstring", length: "12 inches", notes: "This wand was kept in a snake-headed walking stick that Lucius carried; 'borrowed' by Lord Voldemort and destroyed by Harry Potter's wand during the Battle of the Seven Potters in 1997.", image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/5/59/Lucius_Malfoy_first_wand.jpg/revision/latest?cb=20141209060246")
 
-#
-# Lucius Malfoy
-#
-# Lucius Malfoy first wand
-# Elm	Unknown	Dragon heartstring	Unknown	This wand was kept in a snake-headed walking stick that Lucius carried; "borrowed" by Lord Voldemort and destroyed by Harry Potter's wand during the Battle of the Seven Potters in 1997.
-# Mary Cattermole	Cherry	8¾"	Unicorn hair	Unknown	This wand was confiscated by the Muggle-Born Registration Commission in 1997.
-# Merlin	Believed to have been English oak	Unknown
-# Minerva McGonagall
-#
-# ProfMinervaMcGonagallwandNN8290
-# Fir	9½"	Dragon heartstring	Stiff	This wand was most likely purchased from Ollivanders in 1947 when she was eleven almost twelve.
-# Neville Longbottom
-#
-# Neville&#039;s wand
-# Cherry	Unknown	Unicorn hair	Unknown	This wand may have been one of the last wands Mr Ollivander sold before he disappeared in 1996.
-# Peter Pettigrew
-#
-# Peter pettigrew wand
-# Chestnut	9¼"	Dragon heartstring	Brittle	This wand was owned by Pettigrew only since Ollivander had been kidnapped of 1996; passed into the possession of Ron Weasley after the Skirmish at Malfoy Manor in 1998.
-# Quirinus Quirrell	Alder	9"
-# Unicorn hair
-#
-# Bendy
-# Remus Lupin
-#
-# Remus wand
-# Cypress	10¼"	Pliable	Cypress wands are said to be well-matched to wizards who are self-sacrificing and willing to die a heroic death. Lupin spent the majority of his life alone to save others from having to deal with the consequences of his affliction, and died defending Hogwarts castle in the Battle of Hogwarts.
-# Ron Weasley (wand #1)
-#
-# Ron weasley first wand
-# Ash	12"	Unknown	Ron's brother Charlie's old wand; severely damaged in September 1992 after a run-in with the Whomping Willow.
-# Ron Weasley (wand #2)
-#
-# RonWeasleyWandNN8413
-# Willow	14"	Purchased with his father's winnings from a Daily Prophet draw. Taken from him by Snatchers and replaced with Peter Pettigrew's wand.
-# Ron Weasley (wand #3)
-#
-# Peter pettigrew wand
-# Chestnut	9¼"	Dragon heartstring	Brittle	This was Peter Pettigrew's wand. During the Skirmish at Malfoy Manor, Ron took this wand from Pettigrew and used from then on, as his own wand was taken by Snatchers.
-# Rubeus Hagrid	Oak	16"	Unknown	Rather bendy	This wand was snapped in half when Hagrid was expelled from Hogwarts during his third year — the pieces are certainly hidden in Hagrid's pink umbrella.
-# Silvanus Kettleburn	Chestnut	11½"	Phoenix feather	Whippy
-# Tom Riddle
-#
-# LordVoldemortWandNN8403
-# Yew	13½"	Unknown	This wand is "brother" to Harry Potter's wand — the core tail feathers are both from Fawkes.
-# Viktor Krum
-#
-# ViktorKrumWand
-# Hornbeam	10¼"	Dragon heartstring	Quite rigid	This wand is thicker than usual, and made by Gregorovitch.
-# Ginny Weasley
-#
-# Ginny&#039;s wand
-# Yew	Unknown	A yew wand is suited for a person who is a fierce protector of others.[29] Protectiveness is an espect of Ginny's personality. She has frequently defended Harry Potter against others.[30][31][32]
+mcgonagall = Wand.create(wood: "Fir", famous_owners: "Minerva McGonagall", core: "Dragon heartstring", length: "9½ inches", notes: "This wand was most likely purchased from Ollivanders in 1947 when she was eleven almost twelve.", image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/f/f4/ProfMinervaMcGonagallwandNN8290.jpg/revision/latest?cb=20141208232912")
+
+neville = Wand.create(wood: "Cherry", famous_owners: "Neville Longbottom", core: "Unicorn hair", length: "11 inches", notes: "This wand may have been one of the last wands Mr Ollivander sold before he disappeared in 1996.", image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/f/f0/Neville%27s_wand.jpg/revision/latest?cb=20141209002728")
+
+ron = Wand.create(wood: "Chestnut", famous_owners: "Ron Weasley & Peter Pettigrew", core: "Dragon heartstring", length: "9¼ inches", notes: "This was Peter Pettigrew's wand. During the Skirmish at Malfoy Manor, Ron took this wand from Pettigrew and used from then on, as his own wand was taken by Snatchers.", image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/4/4d/Peter_pettigrew_wand.jpg/revision/latest?cb=20141208235337")
+
+voldemort = Wand.create(wood: "Yew", famous_owners: "Tom Riddle", core: "Phoenix feather", length: "13½ inches", notes: "This wand is 'brother' to Harry Potter's wand — the core tail feathers are both from Fawkes.", image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/5/5a/LordVoldemortWandNN8403.jpg/revision/latest?cb=20141208232950")
+
+# Pets
+# Owls:
+hedwig = Pet.create(name: "Hedwig", animal: "Owl", breed: "Snowy White", gender: "Female", former_owner: "Harry Potter", age: 5, image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Snowy_Owl_-_Schnee-Eule.jpg/220px-Snowy_Owl_-_Schnee-Eule.jpg")
+errol = Pet.create(name: "Errol", animal: "Owl", breed: "Great Grey", gender: "Male", former_owner: "Weasley family", age: 9, image_url: "https://d1ia71hq4oe7pn.cloudfront.net/og/75362591-1200px.jpg")
+hermes = Pet.create(name: "Hermes", animal: "Owl", breed: "Western Grey Screech", gender: "Male", former_owner: "Percy Weasley", age: 2, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoHsp6wsdXw43hzfqNlQbTK3M7Hlo2cyKMA7WkCMcJz9R9WLm")
+pigwidgeon = Pet.create(name: "Pigwidgeon", animal: "Owl", breed: "Grey Scops Owl", gender: "Male", former_owner: "Ron Weasley", age: 1, image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/c/ce/Pigwidgeon.jpg/revision/latest?cb=20161123054507")
+
+# Cats:
+norris = Pet.create(name: "Mrs. Norris", animal: "Cat", breed: "Dust colored", gender: "Female", former_owner: "Argus Filch", age: 11, image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/7/7a/Mrs._Norris/revision/latest?cb=20190102080101")
+
+crookshanks = Pet.create(name: "Crookshanks", animal: "Cat", breed: "Ginger", gender: "Male", former_owner: "Hermione Granger", age: 4, image_url: "https://www.thehappycatsite.com/wp-content/uploads/2017/10/red-maine-coon.jpg")
+
+willow = Pet.create(name: "Willow", animal: "Cat", breed: "Calico", gender: "Female", former_owner: "Albus Dumbledore", age: 2, image_url: "http://www.catster.com/wp-content/uploads/2018/03/Calico-cat.jpg")
+
+rocket = Pet.create(name: "Rocket", animal: "Cat", breed: "Tabby", gender: "Female", former_owner: "Severus Snape", age: 8, image_url: "https://dinoanimals.com/wp-content/uploads/2016/09/Tabby-cat-3.jpg")
+
+# Toads:
+trevor = Pet.create(name: "Trevor", animal: "Toad", breed: "Brown", gender: "Male", former_owner: "Neville Longbottom", age: 20, image_url: "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA0MC8yNDkvb3JpZ2luYWwvY2FuZS10b2FkLTEwMDYyNC0wMi5qcGc=")
+
+shivani = Pet.create(name: "Shivani", animal: "Toad", breed: "Giant Purple", gender: "Female", former_owner: "Ginny Weasley", age: 2, image_url: "https://i.pinimg.com/236x/eb/00/99/eb0099a8f1d013633a204747940dd10d--purple-stuff-reptiles.jpg")
+
+cassidy = Pet.create(name: "Cassidy", animal: "Toad", breed: "Harlequin", gender: "Female", former_owner: "Remus Lupin", age: 12, image_url: "https://i.pinimg.com/originals/67/db/d1/67dbd11ceb149e05a24e30995e0f1c50.jpg")
+
+edwin = Pet.create(name: "Edwin", animal: "Toad", breed: "Crested", gender: "Male", former_owner: "Minerva McGonagall", age: 8, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_5QGTF_ZghdeHlJWUa9sanHxhzNZUQBZ5JU2eeKxP5sVqjBE")
+
+# Brooms
+Broom.create(make: "Bluebottle", utility: "Transport", creator:"Blue Bottle Co.", image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2018/06/bluebottle-200x0-c-default.png')
+Broom.create(make: "Cleansweep", utility:"Sport", creator: "Bob, Bill and Barnaby Ollerton", image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2016/09/cleansweep_by_rsandberg-200x0-c-default.jpg')
+Broom.create(make:"Comet Two Sixty" , utility: "Sport", creator: 'Basil Horton and Randolph Keitch', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2018/10/broom-manufacturers-comet-v2-200x0-c-default.jpg')
+Broom.create(make: "FireBolt" , utility:"Sport", creator: 'Randolph Spudmore', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2016/05/broom-manufacturers-firebolt-200x0-c-default.jpg')
+Broom.create(make: "Moontrimmer" , utility: "Sport", creator:'Gladys Boothby', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2015/08/broom-manufacturers-moontrimmer-200x0-c-default.jpg')
+Broom.create(make:"Nimbus 2000" , utility: "Sport", creator:'Devlin Whitehorn', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2016/01/the_new_nimbus_2000_by_edgar1975.jpg')
+Broom.create(make: 'The Oakshaft' , utility: "Transport", creator: 'Elias Grimstone', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2015/08/broom-manufacturers-oakshaft-200x0-c-default.jpg')
+Broom.create(make:'The Shooting Star' , utility: "Racing", creator:'Universal Brooms Ltd', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2016/12/Broom-Harry-Potter-Lexicon-sketch-2016-brown-200x0-c-default.png')
+Broom.create(make: 'The Silver Arrow' , utility: "Sport", creator: 'Leonard Jewkes', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2015/08/broom-manufacturers-silver-arrow-200x0-c-default.jpg')
+Broom.create(make: 'The Swiftstick' , utility: 'Transport', creator: 'Ellerby and Spudmore', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2015/08/broom-manufacturers-swiftstick-200x0-c-default.jpg' )
+Broom.create(make: 'The Tinderblast', utility:'Transport', creator: 'Ellerby and Spudmore', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2015/08/broom-manufacturers-tinderblast-200x0-c-default.jpg')
+Broom.create(make: 'The Twigger 90', utility: 'Transport', creator: 'Flyte and Barker', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2015/08/broom-manufacturers-twigger-200x0-c-default.jpg')
+Broom.create(make:'Starsweeper XXI' , utility: 'Sport', creator: 'USA', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2016/06/broom-manufacturers-starsweeper-200x0-c-default.jpg')
+Broom.create(make: 'Varåpidos' , utility: 'Sport', creator: 'Brazil', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2016/06/broom-manufacturers-var%C3%A5pidos-200x0-c-default.jpg')
+Broom.create(make:' Yajirushi' , utility: 'Sport', creator: 'Japan', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2016/02/broom-manufacturers-yajirushi-200x0-c-default.jpg')
