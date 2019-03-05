@@ -8,7 +8,6 @@ class CreatePets < ActiveRecord::Migration[5.2]
       t.string :former_owner
       t.string :gender
       t.integer :age
-      t.integer :user_id
 
       t.timestamps
     end
