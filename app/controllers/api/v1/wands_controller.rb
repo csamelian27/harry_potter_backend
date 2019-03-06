@@ -10,4 +10,15 @@ class Api::V1::WandsController < ApplicationController
     render json: @wand
   end
 
+  def update
+    @wand = Wand.find(params[:id])
+    @wand.update(wand_params)
+    render json: @wand
+  end
+
+  private
+  def wand_params
+    params.permit(:bought)
+  end
+
 end

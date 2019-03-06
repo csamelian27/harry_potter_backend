@@ -1,7 +1,7 @@
 class User < ApplicationRecord
-  # belongs_to :broom
-  # belongs_to :pet
-  # belongs_to :wand
+  has_many :brooms
+  has_many :pets
+  has_many :wands
   #
   # has_many :user_books
 end

@@ -21,6 +21,11 @@ class Api::V1::UsersController < ApplicationController
     render json: @user
   end
 
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+  end
+
   private
   def user_params
     params.permit(:name, :house, :pet_id, :broom_id, :wand_id)

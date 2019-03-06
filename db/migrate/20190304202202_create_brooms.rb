@@ -5,7 +5,8 @@ class CreateBrooms < ActiveRecord::Migration[5.2]
       t.string :image_url
       t.string :utility
       t.string :creator
-      t.boolean :bought?, default: false
+      t.integer :user_id
+      t.boolean :bought, default: false
 
       t.timestamps
     end
