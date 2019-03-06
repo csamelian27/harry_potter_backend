@@ -8,6 +8,7 @@ class CreatePets < ActiveRecord::Migration[5.2]
       t.string :former_owner
       t.string :gender
       t.integer :age
+      t.boolean :bought?, default: false
 
       t.timestamps
     end

@@ -7,6 +7,7 @@ class CreateWands < ActiveRecord::Migration[5.2]
       t.string :length
       t.string :notes
       t.string :image_url
+      t.boolean :bought?, default: false
 
       t.timestamps
     end
