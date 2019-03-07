@@ -1,0 +1,2 @@
+class UserBroom < ApplicationRecord
+end

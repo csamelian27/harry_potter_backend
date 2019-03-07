@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_04_202202) do
+ActiveRecord::Schema.define(version: 2019_03_07_144838) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 2019_03_04_202202) do
     t.string "image_url"
     t.string "utility"
     t.string "creator"
-    t.integer "user_id"
     t.boolean "bought", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -39,7 +38,6 @@ ActiveRecord::Schema.define(version: 2019_03_04_202202) do
     t.string "former_owner"
     t.string "gender"
     t.integer "age"
-    t.integer "user_id"
     t.boolean "bought", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -48,6 +46,27 @@ ActiveRecord::Schema.define(version: 2019_03_04_202202) do
   create_table "user_books", force: :cascade do |t|
     t.integer "user_id"
     t.integer "book_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_brooms", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "broom_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_pets", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "pet_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_wands", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "wand_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -66,7 +85,6 @@ ActiveRecord::Schema.define(version: 2019_03_04_202202) do
     t.string "length"
     t.string "notes"
     t.string "image_url"
-    t.integer "user_id"
     t.boolean "bought", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -1,0 +1,2 @@
+class UserWand < ApplicationRecord
+end
