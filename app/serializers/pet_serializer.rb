@@ -1,3 +1,6 @@
 class PetSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :animal, :breed, :image_url, :former_owner, :gender, :age, :bought
+
+  has_many :user_pets
+  has_many :users, through: :user_pets
 end

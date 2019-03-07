@@ -1,3 +1,4 @@
 class Broom < ApplicationRecord
-  belongs_to :user
+  has_many :user_brooms
+  has_many :users, through: :user_brooms
 end

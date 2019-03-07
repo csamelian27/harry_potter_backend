@@ -1,3 +1,4 @@
 class Wand < ApplicationRecord
-  belongs_to :user
+  has_many :user_wands
+  has_many :users, through: :user_wands
 end

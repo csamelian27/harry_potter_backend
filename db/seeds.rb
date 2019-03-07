@@ -77,7 +77,6 @@ cassidy = Pet.create(name: "Cassidy", animal: "Toad", breed: "Harlequin", gender
 edwin = Pet.create(name: "Edwin", animal: "Toad", breed: "Crested", gender: "Male", former_owner: "Minerva McGonagall", age: 8, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_5QGTF_ZghdeHlJWUa9sanHxhzNZUQBZ5JU2eeKxP5sVqjBE")
 
 # Brooms
-byebug
 Broom.create(make: "Bluebottle", utility: "Transport", creator:"Blue Bottle Co.", image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2018/06/bluebottle-200x0-c-default.png')
 Broom.create(make: "Cleansweep", utility:"Sport", creator: "Bob, Bill and Barnaby Ollerton", image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2016/09/cleansweep_by_rsandberg-200x0-c-default.jpg')
 Broom.create(make:"Comet Two Sixty" , utility: "Sport", creator: 'Basil Horton and Randolph Keitch', image_url: 'https://www.hp-lexicon.org/wp-content/uploads/2018/10/broom-manufacturers-comet-v2-200x0-c-default.jpg')
