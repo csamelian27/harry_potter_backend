@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_03_07_144838) do
     t.string "title"
     t.string "subject"
     t.string "author"
-    t.boolean "bought", default: false
+    t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 2019_03_07_144838) do
     t.string "image_url"
     t.string "utility"
     t.string "creator"
-    t.boolean "bought", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,7 +38,6 @@ ActiveRecord::Schema.define(version: 2019_03_07_144838) do
     t.string "former_owner"
     t.string "gender"
     t.integer "age"
-    t.boolean "bought", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -86,7 +84,6 @@ ActiveRecord::Schema.define(version: 2019_03_07_144838) do
     t.string "length"
     t.string "notes"
     t.string "image_url"
-    t.boolean "bought", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

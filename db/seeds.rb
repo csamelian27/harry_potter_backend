@@ -3,14 +3,14 @@ cass = User.create(name: "Cassidy", house: "Gryffindor")
 kudz = User.create(name: "Kudzanayi", house: "Slytherin")
 
 # Books
-spells = Book.create(title: "The Standard Book of Spells, Grade 1", author: "Miranda Goshawk", subject: "Charms")
-history = Book.create(title: "A History of Magic", author: "Bathilda Bagshot", subject: "History of Magic")
-theory = Book.create(title: "Magical Theory", author: "Adalbert Waffling", subject: "Magic Theory")
-transfiguration = Book.create(title: "A Beginner's Guide to Transfiguration", author: "Emeric Switch", subject: "Transfiguration")
-herbology = Book.create(title: "One Thousand Magical Herbs and Fungi", author: "Phyllida Spore", subject: "Herbology")
-potions = Book.create(title: "Magical Drafts and Potions", author: "Arsenius Jigger", subject: "Potions")
-creatures = Book.create(title: "Fantastic Beasts and Where to Find Them", author: "Newt Scamander", subject: "Care of Magical Creatures")
-dark_arts = Book.create(title: "The Dark Forces: A Guide to Self-Protection", author: "Quentin Trimble", subject: "Defense Against the Dark Arts")
+spells = Book.create(title: "The Standard Book of Spells, Grade 1", author: "Miranda Goshawk", subject: "Charms", image_url: "https://images.gr-assets.com/books/1401251770l/22363194.jpg")
+history = Book.create(title: "A History of Magic", author: "Bathilda Bagshot", subject: "History of Magic", image_url: "https://www.qbd.com.au/img/products/0/9781408890769.jpg")
+theory = Book.create(title: "Magical Theory", author: "Adalbert Waffling", subject: "Magic Theory", image_url: "https://i.pinimg.com/236x/76/65/01/766501b940edc659b002b5f067545629--harry-potter-outfit-theory.jpg")
+transfiguration = Book.create(title: "A Beginner's Guide to Transfiguration", author: "Emeric Switch", subject: "Transfiguration", image_url: "https://i.pinimg.com/originals/ba/7a/8e/ba7a8efc9acac02ba21726925671eeb8.jpg")
+herbology = Book.create(title: "One Thousand Magical Herbs and Fungi", author: "Phyllida Spore", subject: "Herbology", image_url: "https://i.pinimg.com/originals/dd/eb/0b/ddeb0bf101b0b6f7c1832f564c202a86.png")
+potions = Book.create(title: "Magical Drafts and Potions", author: "Arsenius Jigger", subject: "Potions", image_url: "https://images.gr-assets.com/books/1401250964l/22363031.jpg")
+creatures = Book.create(title: "Fantastic Beasts and Where to Find Them", author: "Newt Scamander", subject: "Care of Magical Creatures", image_url: "https://pictures.abebooks.com/isbn/9780545850568-uk.jpg")
+dark_arts = Book.create(title: "The Dark Forces: A Guide to Self-Protection", author: "Quentin Trimble", subject: "Defense Against the Dark Arts", image_url: "https://i.pinimg.com/originals/1a/73/5b/1a735b01495253e12e5a012bce88631f.jpg")
 
 # Wands
 elder_wand = Wand.create(wood: "Elder", famous_owners: "Albus Dumbledore", core: "Thestral tail hair", length: "15 inches", notes: "Unknown	The Elder Wand, one of the Deathly Hallows. Also known as the Deathstick and the Wand of Destiny.", image_url: "https://vignette.wikia.nocookie.net/harrypotter/images/c/c9/The_Elder_Wand.JPG/revision/latest?cb=20101129135216")
@@ -43,36 +43,26 @@ voldemort = Wand.create(wood: "Yew", famous_owners: "Tom Riddle", core: "Phoenix
 
 # Pets
 # Owls:
-# https://d1ia71hq4oe7pn.cloudfront.net/og/75362591-1200px.jpg
-# https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoHsp6wsdXw43hzfqNlQbTK3M7Hlo2cyKMA7WkCMcJz9R9WLm
-# https://vignette.wikia.nocookie.net/harrypotter/images/c/ce/Pigwidgeon.jpg/revision/latest?cb=20161123054507
 hedwig = Pet.create(name: "Hedwig", animal: "Owl", breed: "Snowy White", gender: "Female", former_owner: "Harry Potter", age: 5, image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Snowy_Owl_-_Schnee-Eule.jpg/220px-Snowy_Owl_-_Schnee-Eule.jpg")
-errol = Pet.create(name: "Errol", animal: "Owl", breed: "Great Grey", gender: "Male", former_owner: "Weasley family", age: 9, image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Snowy_Owl_-_Schnee-Eule.jpg/220px-Snowy_Owl_-_Schnee-Eule.jpg")
-hermes = Pet.create(name: "Hermes", animal: "Owl", breed: "Western Grey Screech", gender: "Male", former_owner: "Percy Weasley", age: 2, image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Snowy_Owl_-_Schnee-Eule.jpg/220px-Snowy_Owl_-_Schnee-Eule.jpg")
-pigwidgeon = Pet.create(name: "Pigwidgeon", animal: "Owl", breed: "Grey Scops Owl", gender: "Male", former_owner: "Ron Weasley", age: 1, image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Snowy_Owl_-_Schnee-Eule.jpg/220px-Snowy_Owl_-_Schnee-Eule.jpg")
+errol = Pet.create(name: "Errol", animal: "Owl", breed: "Great Grey", gender: "Male", former_owner: "Weasley family", age: 9, image_url: "https://cdn.shopify.com/s/files/1/0210/7662/products/IMG_5292_large.JPG?v=1463315887")
+hermes = Pet.create(name: "Hermes", animal: "Owl", breed: "Western Grey Screech", gender: "Male", former_owner: "Percy Weasley", age: 2, image_url: "https://download.ams.birds.cornell.edu/api/v1/asset/24901161/medium")
+pigwidgeon = Pet.create(name: "Pigwidgeon", animal: "Owl", breed: "Grey Scops", gender: "Male", former_owner: "Ron Weasley", age: 1, image_url: "https://www.factzoo.com/sites/all/img/birds/owls/white-faced-scops-owl.jpg")
 
 # Cats:
-# https://vignette.wikia.nocookie.net/harrypotter/images/7/7a/Mrs._Norris/revision/latest?cb=20190102080101
-# https://www.thehappycatsite.com/wp-content/uploads/2017/10/red-maine-coon.jpg
-# http://www.catster.com/wp-content/uploads/2018/03/Calico-cat.jpg
-# https://dinoanimals.com/wp-content/uploads/2016/09/Tabby-cat-3.jpg
-norris = Pet.create(name: "Mrs. Norris", animal: "Cat", breed: "Dust colored", gender: "Female", former_owner: "Argus Filch", age: 11, image_url: "https://i.pinimg.com/236x/0c/8c/4c/0c8c4c5c2824e579b079085df25a4454--orange-tabby-cats-ginger-cats.jpg?b=t")
+norris = Pet.create(name: "Mrs. Norris", animal: "Cat", breed: "Dust Colored", gender: "Female", former_owner: "Argus Filch", age: 11, image_url: "https://catspride.com/wp-content/uploads/2018/01/Cats-Pride-Header-Image-FAQ-@2x-tinypng.png")
 
-crookshanks = Pet.create(name: "Crookshanks", animal: "Cat", breed: "Ginger", gender: "Male", former_owner: "Hermione Granger", age: 4, image_url: "https://i.pinimg.com/236x/0c/8c/4c/0c8c4c5c2824e579b079085df25a4454--orange-tabby-cats-ginger-cats.jpg?b=t")
+crookshanks = Pet.create(name: "Crookshanks", animal: "Cat", breed: "Ginger", gender: "Male", former_owner: "Hermione Granger", age: 4, image_url: "https://www.thehappycatsite.com/wp-content/uploads/2017/10/red-maine-coon.jpg")
 
-willow = Pet.create(name: "Willow", animal: "Cat", breed: "Calico", gender: "Female", former_owner: "Albus Dumbledore", age: 2, image_url: "https://i.pinimg.com/236x/0c/8c/4c/0c8c4c5c2824e579b079085df25a4454--orange-tabby-cats-ginger-cats.jpg?b=t")
+willow = Pet.create(name: "Willow", animal: "Cat", breed: "Calico", gender: "Female", former_owner: "Albus Dumbledore", age: 2, image_url: "https://i.pinimg.com/originals/aa/77/e7/aa77e7d95f8f8e06acb6cecbae067a32.jpg")
 
-rocket = Pet.create(name: "Rocket", animal: "Cat", breed: "Tabby", gender: "Female", former_owner: "Severus Snape", age: 8, image_url: "https://i.pinimg.com/236x/0c/8c/4c/0c8c4c5c2824e579b079085df25a4454--orange-tabby-cats-ginger-cats.jpg?b=t")
+rocket = Pet.create(name: "Rocket", animal: "Cat", breed: "Tabby", gender: "Female", former_owner: "Severus Snape", age: 8, image_url: "https://i.pinimg.com/736x/bb/af/a5/bbafa5688a7e64c4431a3b575f9035c6.jpg")
 
 # Toads:
-# https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA0MC8yNDkvb3JpZ2luYWwvY2FuZS10b2FkLTEwMDYyNC0wMi5qcGc=
-# https://i.pinimg.com/236x/eb/00/99/eb0099a8f1d013633a204747940dd10d--purple-stuff-reptiles.jpg
-# https://i.pinimg.com/originals/67/db/d1/67dbd11ceb149e05a24e30995e0f1c50.jpg
-trevor = Pet.create(name: "Trevor", animal: "Toad", breed: "Brown", gender: "Male", former_owner: "Neville Longbottom", age: 20, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_5QGTF_ZghdeHlJWUa9sanHxhzNZUQBZ5JU2eeKxP5sVqjBE")
+trevor = Pet.create(name: "Trevor", animal: "Toad", breed: "Brown", gender: "Male", former_owner: "Neville Longbottom", age: 20, image_url: "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA0MC8yNDkvb3JpZ2luYWwvY2FuZS10b2FkLTEwMDYyNC0wMi5qcGc=")
 
-shivani = Pet.create(name: "Shivani", animal: "Toad", breed: "Giant Purple", gender: "Female", former_owner: "Ginny Weasley", age: 2, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_5QGTF_ZghdeHlJWUa9sanHxhzNZUQBZ5JU2eeKxP5sVqjBE")
+shivani = Pet.create(name: "Shivani", animal: "Toad", breed: "Giant Purple", gender: "Female", former_owner: "Ginny Weasley", age: 2, image_url: "https://i.pinimg.com/236x/eb/00/99/eb0099a8f1d013633a204747940dd10d--purple-stuff-reptiles.jpg")
 
-cassidy = Pet.create(name: "Cassidy", animal: "Toad", breed: "Harlequin", gender: "Female", former_owner: "Remus Lupin", age: 12, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_5QGTF_ZghdeHlJWUa9sanHxhzNZUQBZ5JU2eeKxP5sVqjBE")
+cassidy = Pet.create(name: "Cassidy", animal: "Toad", breed: "Harlequin", gender: "Female", former_owner: "Remus Lupin", age: 12, image_url: "https://i.pinimg.com/originals/67/db/d1/67dbd11ceb149e05a24e30995e0f1c50.jpg")
 
 edwin = Pet.create(name: "Edwin", animal: "Toad", breed: "Crested", gender: "Male", former_owner: "Minerva McGonagall", age: 8, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_5QGTF_ZghdeHlJWUa9sanHxhzNZUQBZ5JU2eeKxP5sVqjBE")
 
